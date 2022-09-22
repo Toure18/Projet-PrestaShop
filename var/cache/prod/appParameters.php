@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => '127.0.0.1',
+    'database_port' => '',
+    'database_name' => 'prestashop',
+    'database_user' => 'Madjoula',
+    'database_password' => 'Tourekunda',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => '6u36fsQbZjRF93ava8U5M2tRnY2t2QUKFEIw9FtC28dcTr5quIztGipxPdJJV2UJ',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2022-09-22',
+    'locale' => 'fr-FR',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'ti13BBjb2vNMMPeQ5Q82BNEIHhfd0kgPVTezz3Bn4IhUR4CGQd2e0m13TVTxAggP',
+    'cookie_iv' => '5pqNQVxUB35T7yYm1399USMxcNpdMx48',
+    'new_cookie_key' => 'def00000a78eaf74e8415d504050fbf2d292dd55be9ca75555883fcdcff4f3b65722a14c7ccf979421de0c50ac06b33094431762df0e579dac8d8072f7491deae6b8ebc0',
+  ),
+);
