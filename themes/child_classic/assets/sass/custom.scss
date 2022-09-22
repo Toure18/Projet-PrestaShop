@@ -1,0 +1,24 @@
+$base-color: #048B9A;
+$grey: grey;
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;   
+    background-color: $base-color ;
+    #header{
+        background-color: $base-color;
+    }
+    .btn-primary{
+        background-color: $base-color;
+        &:hover {
+            background-color: white ;
+            color: $base-color
+        }
+    }
+    #custom-text{
+        border-radius: 50px;
+    }
+
+}
+
+

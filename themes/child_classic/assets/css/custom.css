@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #048B9A;
+}
+body #header {
+  background-color: #048B9A;
+}
+body .btn-primary {
+  background-color: #048B9A;
+}
+body .btn-primary:hover {
+  background-color: white;
+  color: #048B9A;
+}
+body #custom-text {
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=custom.css.map */
