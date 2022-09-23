@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-09-22 16:48:55
+/* Smarty version 3.1.43, created on 2022-09-23 01:35:13
   from 'module:blockwishlistviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_632c75d7184db6_08641334',
+  'unifunc' => 'content_632cf13132f266_27303295',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_632c75d7184db6_08641334 (Smarty_Internal_Template $_smarty_tpl) {
+function content_632cf13132f266_27303295 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div
   class="wishlist-button"
   data-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['url']->value, ENT_QUOTES, 'UTF-8');?>

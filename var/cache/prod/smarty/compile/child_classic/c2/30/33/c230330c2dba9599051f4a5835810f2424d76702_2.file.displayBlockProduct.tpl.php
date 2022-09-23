@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-09-22 16:48:55
+/* Smarty version 3.1.43, created on 2022-09-23 01:35:13
   from '/Users/madjoulatoure/Desktop/prestashop_1/modules/blockreassurance/views/templates/hook/displayBlockProduct.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_632c75d7218f58_70061853',
+  'unifunc' => 'content_632cf131528639_19270941',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_632c75d7218f58_70061853 (Smarty_Internal_Template $_smarty_tpl) {
+function content_632cf131528639_19270941 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="blockreassurance_product">
     <?php

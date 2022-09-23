@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-09-22 16:29:28
+/* Smarty version 3.1.43, created on 2022-09-23 01:35:14
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_632c7148bb44c4_88325859',
+  'unifunc' => 'content_632cf1325e17d6_70436529',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,13 +18,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_632c7148bb44c4_88325859 (Smarty_Internal_Template $_smarty_tpl) {
+function content_632cf1325e17d6_70436529 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod/smarty/compile/child_classiclayouts_layout_full_width_tpl/33/4f/5d/334f5d11c64c11ac3913085a17e2adec8812c63f_2.file.helpers.tpl.php',
     'uid' => '334f5d11c64c11ac3913085a17e2adec8812c63f',
-    'call_name' => 'smarty_template_function_renderLogo_865735983632c7148602ab6_50384421',
+    'call_name' => 'smarty_template_function_renderLogo_2123450895632cf12f20fa51_66459984',
   ),
 ));
 ?>

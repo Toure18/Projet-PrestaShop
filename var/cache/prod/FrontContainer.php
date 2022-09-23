@@ -1186,12 +1186,12 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $b = new \Doctrine\Persistence\Mapping\Driver\MappingDriverChain();
 
         $c = ${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'};
-        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Downloads/prestashop_1/modules/productcomments/src/Entity']);
-        $d->addExcludePaths([0 => '/Users/madjoulatoure/Downloads/prestashop_1/modules/productcomments/src/Entity/index.php']);
-        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Downloads/prestashop_1/modules/ps_checkout/src/Entity']);
-        $e->addExcludePaths([0 => '/Users/madjoulatoure/Downloads/prestashop_1/modules/ps_checkout/src/Entity/index.php']);
+        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Desktop/prestashop_1/modules/productcomments/src/Entity']);
+        $d->addExcludePaths([0 => '/Users/madjoulatoure/Desktop/prestashop_1/modules/productcomments/src/Entity/index.php']);
+        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Desktop/prestashop_1/modules/ps_checkout/src/Entity']);
+        $e->addExcludePaths([0 => '/Users/madjoulatoure/Desktop/prestashop_1/modules/ps_checkout/src/Entity/index.php']);
 
-        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Downloads/prestashop_1/src/PrestaShopBundle/Entity']), 'PrestaShop');
+        $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/Users/madjoulatoure/Desktop/prestashop_1/src/PrestaShopBundle/Entity']), 'PrestaShop');
         $b->addDriver($d, 'PrestaShop\\Module\\ProductComment\\Entity');
         $b->addDriver($e, 'PrestaShop\\Module\\PrestashopCheckout\\Entity');
 
@@ -1200,7 +1200,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $a->setQueryCacheImpl(${($_ = isset($this->services['doctrine_cache.providers.doctrine.orm.default_query_cache']) ? $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] : $this->getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService()) && false ?: '_'});
         $a->setResultCacheImpl(${($_ = isset($this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result']) ? $this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.result'] : $this->getDoctrine_Orm_Cache_Provider_Cache_Doctrine_Orm_Default_ResultService()) && false ?: '_'});
         $a->setMetadataDriverImpl($b);
-        $a->setProxyDir('/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod//doctrine/orm/Proxies');
+        $a->setProxyDir('/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod//doctrine/orm/Proxies');
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -1229,7 +1229,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_d5c1741e6ba11837aad0461c120f9f42d8b6db033a31ee03eb208ef83cca4f55');
+        $instance->setNamespace('sf_orm_default_403e4fe8eb2eed2f84b3895cb2be83ac7407913a34b22aafe91615d325fdbcc4');
 
         return $instance;
     }
@@ -1243,7 +1243,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf_orm_default_d5c1741e6ba11837aad0461c120f9f42d8b6db033a31ee03eb208ef83cca4f55');
+        $instance->setNamespace('sf_orm_default_403e4fe8eb2eed2f84b3895cb2be83ac7407913a34b22aafe91615d325fdbcc4');
 
         return $instance;
     }
@@ -1405,7 +1405,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
-        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod//localization');
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod//localization');
     }
 
     /**
@@ -1415,7 +1415,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
-        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod//localization'))) && false ?: '_'});
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(${($_ = isset($this->services['prestashop.core.localization.cldr.cache.adapter']) ? $this->services['prestashop.core.localization.cldr.cache.adapter'] : ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod//localization'))) && false ?: '_'});
 
         $instance->setLowerLayer(${($_ = isset($this->services['prestashop.core.localization.cldr.datalayer.locale_reference']) ? $this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] : $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()) && false ?: '_'});
 
@@ -1627,7 +1627,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Cache_DirectoryService()
     {
-        return $this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1', false);
+        return $this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1', false);
     }
 
     /**
@@ -1637,7 +1637,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Cache_Paypal_MerchantIntegrationService()
     {
-        return $this->services['ps_checkout.cache.paypal.merchant_integration'] = new \Symfony\Component\Cache\Simple\FilesystemCache('merchant-integration', 86400, ${($_ = isset($this->services['ps_checkout.cache.directory']) ? $this->services['ps_checkout.cache.directory'] : ($this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1', false))) && false ?: '_'}->getPath());
+        return $this->services['ps_checkout.cache.paypal.merchant_integration'] = new \Symfony\Component\Cache\Simple\FilesystemCache('merchant-integration', 86400, ${($_ = isset($this->services['ps_checkout.cache.directory']) ? $this->services['ps_checkout.cache.directory'] : ($this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1', false))) && false ?: '_'}->getPath());
     }
 
     /**
@@ -1647,7 +1647,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Cache_Paypal_OrderService()
     {
-        return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ${($_ = isset($this->services['ps_checkout.cache.directory']) ? $this->services['ps_checkout.cache.directory'] : ($this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1', false))) && false ?: '_'}->getPath());
+        return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ${($_ = isset($this->services['ps_checkout.cache.directory']) ? $this->services['ps_checkout.cache.directory'] : ($this->services['ps_checkout.cache.directory'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1', false))) && false ?: '_'}->getPath());
     }
 
     /**
@@ -1837,7 +1837,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_LoggerService()
     {
-        return $this->services['ps_checkout.logger'] = ${($_ = isset($this->services['ps_checkout.logger.factory']) ? $this->services['ps_checkout.logger.factory'] : $this->getPsCheckout_Logger_FactoryService()) && false ?: '_'}->build(${($_ = isset($this->services['ps_checkout.logger.directory']) ? $this->services['ps_checkout.logger.directory'] : ($this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1'))) && false ?: '_'});
+        return $this->services['ps_checkout.logger'] = ${($_ = isset($this->services['ps_checkout.logger.factory']) ? $this->services['ps_checkout.logger.factory'] : $this->getPsCheckout_Logger_FactoryService()) && false ?: '_'}->build(${($_ = isset($this->services['ps_checkout.logger.directory']) ? $this->services['ps_checkout.logger.directory'] : ($this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1'))) && false ?: '_'});
     }
 
     /**
@@ -1857,7 +1857,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Logger_DirectoryService()
     {
-        return $this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1');
+        return $this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1');
     }
 
     /**
@@ -1897,7 +1897,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Logger_Handler_FactoryService()
     {
-        return $this->services['ps_checkout.logger.handler.factory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(${($_ = isset($this->services['ps_checkout.logger.directory']) ? $this->services['ps_checkout.logger.directory'] : ($this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Downloads/prestashop_1'))) && false ?: '_'}->getPath(), ${($_ = isset($this->services['ps_checkout.logger.filename']) ? $this->services['ps_checkout.logger.filename'] : $this->getPsCheckout_Logger_FilenameService()) && false ?: '_'}->get(), ${($_ = isset($this->services['ps_checkout.logger.configuration']) ? $this->services['ps_checkout.logger.configuration'] : $this->getPsCheckout_Logger_ConfigurationService()) && false ?: '_'}->getMaxFiles(), ${($_ = isset($this->services['ps_checkout.logger.configuration']) ? $this->services['ps_checkout.logger.configuration'] : $this->getPsCheckout_Logger_ConfigurationService()) && false ?: '_'}->getLevel());
+        return $this->services['ps_checkout.logger.handler.factory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(${($_ = isset($this->services['ps_checkout.logger.directory']) ? $this->services['ps_checkout.logger.directory'] : ($this->services['ps_checkout.logger.directory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('1.7.8.7', '/Users/madjoulatoure/Desktop/prestashop_1'))) && false ?: '_'}->getPath(), ${($_ = isset($this->services['ps_checkout.logger.filename']) ? $this->services['ps_checkout.logger.filename'] : $this->getPsCheckout_Logger_FilenameService()) && false ?: '_'}->get(), ${($_ = isset($this->services['ps_checkout.logger.configuration']) ? $this->services['ps_checkout.logger.configuration'] : $this->getPsCheckout_Logger_ConfigurationService()) && false ?: '_'}->getMaxFiles(), ${($_ = isset($this->services['ps_checkout.logger.configuration']) ? $this->services['ps_checkout.logger.configuration'] : $this->getPsCheckout_Logger_ConfigurationService()) && false ?: '_'}->getLevel());
     }
 
     /**
@@ -3026,12 +3026,12 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'kernel.bundles' => [
 
             ],
-            'kernel.root_dir' => '/Users/madjoulatoure/Downloads/prestashop_1/app',
-            'kernel.project_dir' => '/Users/madjoulatoure/Downloads/prestashop_1',
+            'kernel.root_dir' => '/Users/madjoulatoure/Desktop/prestashop_1/app',
+            'kernel.project_dir' => '/Users/madjoulatoure/Desktop/prestashop_1',
             'kernel.name' => 'app',
             'kernel.debug' => false,
             'kernel.environment' => 'prod',
-            'kernel.cache_dir' => '/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod/',
+            'kernel.cache_dir' => '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod/',
             'kernel.active_modules' => [
                 0 => 'blockwishlist',
                 1 => 'contactform',
@@ -3097,7 +3097,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 61 => 'blockreassurance',
                 62 => 'ps_facetedsearch',
             ],
-            'ps_cache_dir' => '/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod/',
+            'ps_cache_dir' => '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod/',
             'mail_themes_uri' => '/mails/themes',
             'doctrine_cache.apc.class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine_cache.apcu.class' => 'Doctrine\\Common\\Cache\\ApcuCache',
@@ -3208,7 +3208,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => false,
-            'doctrine.orm.proxy_dir' => '/Users/madjoulatoure/Downloads/prestashop_1/var/cache/prod//doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => '/Users/madjoulatoure/Desktop/prestashop_1/var/cache/prod//doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
         ];
     }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-09-22 16:48:54
+/* Smarty version 3.1.43, created on 2022-09-23 01:35:11
   from '/Users/madjoulatoure/Desktop/prestashop_1/themes/classic/templates/_partials/microdata/product-jsonld.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_632c75d6e75599_73945090',
+  'unifunc' => 'content_632cf12fbf08e4_95741586',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c4c5ee60f865ef397f52b0c8038af591ab0e6b86' => 
     array (
       0 => '/Users/madjoulatoure/Desktop/prestashop_1/themes/classic/templates/_partials/microdata/product-jsonld.tpl',
-      1 => 1663853232,
+      1 => 1663885419,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_632c75d6e75599_73945090 (Smarty_Internal_Template $_smarty_tpl) {
+function content_632cf12fbf08e4_95741586 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/madjoulatoure/Desktop/prestashop_1/vendor/smarty/smarty/libs/plugins/modifier.regex_replace.php','function'=>'smarty_modifier_regex_replace',),1=>array('file'=>'/Users/madjoulatoure/Desktop/prestashop_1/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_assignInScope('hasAggregateRating', false);
 if (!empty($_smarty_tpl->tpl_vars['product']->value['productComments']['averageRating']) && !empty($_smarty_tpl->tpl_vars['product']->value['productComments']['nbComments'])) {?>

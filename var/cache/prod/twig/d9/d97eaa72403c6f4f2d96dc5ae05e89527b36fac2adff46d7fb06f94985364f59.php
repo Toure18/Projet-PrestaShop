@@ -1213,6 +1213,6 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
 
     public function getSourceContext()
     {
-        return new Source("", "@PrestaShop/Admin/macros.html.twig", "/Users/madjoulatoure/Downloads/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/macros.html.twig");
+        return new Source("", "@PrestaShop/Admin/macros.html.twig", "/Users/madjoulatoure/Desktop/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/macros.html.twig");
     }
 }

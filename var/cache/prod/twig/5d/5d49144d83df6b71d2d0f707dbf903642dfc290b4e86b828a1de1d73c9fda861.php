@@ -303,6 +303,6 @@ class __TwigTemplate_4e4516dacf812ff276a55a4684e43917bc3ab102c1a9560ddc363773231
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/TwigTemplateForm:prestashop_ui_kit.html.twig", "/Users/madjoulatoure/Downloads/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/TwigTemplateForm/prestashop_ui_kit.html.twig");
+        return new Source("", "PrestaShopBundle:Admin/TwigTemplateForm:prestashop_ui_kit.html.twig", "/Users/madjoulatoure/Desktop/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/TwigTemplateForm/prestashop_ui_kit.html.twig");
     }
 }

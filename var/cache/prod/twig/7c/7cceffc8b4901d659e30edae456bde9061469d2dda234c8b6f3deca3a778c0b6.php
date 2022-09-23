@@ -256,6 +256,6 @@ class __TwigTemplate_ebcff51ae136e71b516518b2c2d2f95ec55ffed5237e7321507b95645b5
 
     public function getSourceContext()
     {
-        return new Source("", "@PrestaShop/Admin/TwigTemplateForm/translatable_choice.html.twig", "/Users/madjoulatoure/Downloads/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/TwigTemplateForm/translatable_choice.html.twig");
+        return new Source("", "@PrestaShop/Admin/TwigTemplateForm/translatable_choice.html.twig", "/Users/madjoulatoure/Desktop/prestashop_1/src/PrestaShopBundle/Resources/views/Admin/TwigTemplateForm/translatable_choice.html.twig");
     }
 }
