@@ -1,24 +1,65 @@
 $base-color: #048B9A;
 $grey: grey;
+$white : white;
+$principal-color: #24b9d7;
 
 
-body{
+body, html{
     font-family: Arial, Helvetica, sans-serif;   
     background-color: $base-color ;
-    #header{
-        background-color: $base-color;
-    }
-    .btn-primary{
-        background-color: $base-color;
-        &:hover {
-            background-color: white ;
-            color: $base-color
-        }
-    }
-    #custom-text{
-        border-radius: 50px;
-    }
-
 }
 
+#header{
+    background-color: $base-color;
+}
 
+.thumbnail-container{
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: $base-color;
+    &:hover {
+        background-color: $white;
+        color: $base-color
+    }
+}
+
+#custom-text{
+    border-radius: 50px;
+    &:hover{
+        box-shadow: 3px 3px 10px $grey;
+    }
+    
+}
+
+.footer-container{
+    a{
+        color: $principal-color;
+        &:hover{
+            color:$white;
+        }
+    }
+    #contact-infos{
+        color:$white;
+    }
+    li{
+        a{
+            color: $white;
+        }
+    }
+}
+
+.block_newsletter{
+    padding: 30px;
+    box-shadow: 3px 3px 10px;
+    border-radius: 15px;
+    &:hover{
+        box-shadow: 3px 3px 20px $principal-color;
+    }
+    
+}
+.product-container{
+    display: flex;
+    flex-direction:row-reverse;
+}
